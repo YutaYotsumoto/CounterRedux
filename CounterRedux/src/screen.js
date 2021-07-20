@@ -5,7 +5,7 @@ const Screen = () => {
   return (
     <SafeAreaView style={styles.Screen}>
       <View style={styles.ViewStyle}>
-        <Text style={styles.font}>数値</Text>
+        <Text style={styles.font}>count</Text>
       </View>
 
       <View style={styles.Button}>
