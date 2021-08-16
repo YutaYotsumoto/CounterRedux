@@ -1,7 +1,9 @@
 import {createSlice} from '@reduxjs/toolkit';
 
-// slice(Counterのstore)
+// counterSlice作成
+
 export const counterSlice = createSlice({
+  // Sliceの名前を設定
   name: 'counter',
   // stateの初期値の設定
   initialState: {
@@ -22,5 +24,7 @@ export const counterSlice = createSlice({
   },
 });
 
-export const {increment, decrement, reset} = counterSlice.actions;
+//counterReducerをexport
 export default counterSlice.reducer;
+//Actioncreatorをexport
+export const {increment, decrement, reset} = counterSlice.actions;
